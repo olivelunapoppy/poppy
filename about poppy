@@ -1,98 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poppy's Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  
+  
+  <nav class="nav">
+    <a href="#bio">Biography</a>
+    <a href="#likes-and-dislikes">Likes and Dislikes</a>
+    <a href="#faq">FAQ</a>
+    <a href="#pictures">Pictures of Poppy</a>
+    <a href="#fanmail">Fanmail Submission</a> 
+  </nav>
+  <center>
+  <h1>All About Poppy</h1>
+  </center>
 </head>
+
 <body>
-    <header>
-        <h1>Poppy's Website</h1>
-    </header>
-
-    <nav>
-        <a href="#biography">Biography</a>
-        <a href="#likes">Likes and Dislikes</a>
-        <a href="#faq">FAQ</a>
-        <a href="#pictures">Pictures of Poppy</a>
-        <a href="#fanmail">Fanmail Submission</a>
-    </nav>
-
-    <section id="biography" class="section-box">
-        <h2>Biography</h2>
-        <!-- Add your content for the biography section -->
-    </section>
-
-    <section id="likes" class="section-box">
-        <h2>Likes and Dislikes</h2>
-        <!-- Add your content for the likes and dislikes section -->
-    </section>
-
-    <section id="faq" class="section-box">
-        <h2>FAQ</h2>
-        <!-- Add your content for the FAQ section -->
-    </section>
-
-    <section id="pictures" class="section-box">
-        <h2>Pictures of Poppy</h2>
-        <!-- Add your content for the pictures section -->
-    </section>
-
-    <section id="fanmail" class="section-box">
-        <h2>Fanmail Submission</h2>
-        <!-- Add your content for the fanmail submission section -->
-    </section>
+  <div class="bio">
+    <h2>Biography</h2>
+    <p>Poppy was adopted by Sarah and John in 2018 after she was found in a crosswalk by Sneed. </p>
+  </div>
+  <p>
+  <div class="likes-and-dislikes">
+    <h2>Likes and Dislikes</h2>
+    <h3>Likes: </h3>
+    <article>
+    <ul>
+      <li>Wet food</li>
+      <li>Olive</li>
+      <li>Kalee</li>
+      <li>Staring at nothing</li>
+      <li>Getting in the way</li>
+      <li>Naps</li>
+      <li>String toy</li>
+    </ul>
+    </article>
+    <br>
+    <h3>Dislikes: </h3>
+    <article>
+      <ul>
+        <li>Citrus</li>
+        <li>Closed doors</li>
+        <li>Children</li>
+    </article>
+  </div>
+  <p>
+  <div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <br>
+    <h3>Why does Poppy look like that?</h3>
+    <br>
+    <p>Poppy is actually in the process of solving complex mathematical equations at all times.</p>
+    <br>
+    <h3>What is Poppy's favorite color?</h3>
+    <br>
+    <p>Poppy is a cat which means she can only see in greens and blues. Her favorite color is purple. 
+    </p>
+    <br>
+    <h3>What are Poppy's favorite activities?</h3>
+    <br>
+    <p>Poppy likes a lot of activities like playing with toys, knocking stuff off of counters, and getting in the way.</p>
+    <br>
+    <h3>What kind of breed is Poppy?</h3>
+    <br>
+    <p>Poppy is an American Shorthair mixed with feral raccoon.</p>
+  </div>
+  <p>
+  <div class="pictures">
+    <h2>Pictures of Poppy</h2>
+    <img src="https://i.imgur.com/N3F1yiO.jpg" class="image">
+    <article>
+    Poppy in the process of thinking. 
+    </article>
+    <br>
+    <br>
+    <img src="https://i.imgur.com/Fd7DMKr.jpg" class="image">
+    <article>
+    Poppy learning about her spiritual gifts (she has all of them). 
+    </article>
+    <br>
+    
+  </div>
+  <p>
+  <div class="fanmail">
+    <h2>Fanmail Submission Form</h2>
+    <center>
+    <input type="text" id="fanmail-box" class="fanmail-box" placeholder="Submit your Poppy fanmail here!">
+    </center>
+    <br>
+    <center>
+    <input type="submit" value="Submit">
+    </center>
+  </div>
 </body>
 
 <style>
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image */
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
+  background-image: url("https://i.imgur.com/ILCaYbt.png");
+  background-attachment: fixed; 
+  color: #fff;
+  padding: 25px;
+  font-family: sans-serif;
 }
 
-header {
-    background-color: #333;
-    padding: 15px;
-    text-align: center;
+.nav {
+  background-color: #667b68; 
+  padding: 5px; 
+  position: relative;   
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+a {
+  color: #a3b899; 
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+h1 {
+  color: #667b68; 
+  font-family: 'Amatic SC';
+  font-size: 80px; 
 }
 
-nav a:hover, nav a:active {
-    background-color: #555;
-    color: #ffcc00; /* Change to your preferred color */
+h2 {
+  color: #dde6d5;
+  font-family: 'Lobster'; 
+  font-size: 30px; 
 }
 
-section {
-    text-align: center;
-    margin: 20px;
+h3 {
+  font-family: 'Lobster';
+  font-size: 24px; 
 }
 
-.section-box {
-    background-color: rgba(255, 255, 255, 0.7); /* Adjust the opacity as needed */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+p {
+  font-family: 'Courier New';
 }
+
+article {
+  font-family: 'Courier New';
+}
+
+.bio {
+  background-color: #667b68;
+  padding: 10px; 
+  height: auto; 
+  width: 400px; 
+  opacity: 0.90;
+  position: center; 
+  margin: auto; 
+}
+
+.likes-and-dislikes {
+  background-color: #667b68;
+  padding: 10px; 
+  height: auto; 
+  width: 400px; 
+  opacity: 0.90;
+  position: center; 
+  margin: auto; 
+}
+
+.faq {
+  background-color: #667b68;
+  padding: 10px; 
+  height: auto; 
+  width: 400px; 
+  opacity: 0.90;
+  position: center; 
+  margin: auto; 
+}
+
+.pictures {
+  background-color: #667b68;
+  padding: 10px; 
+  height: auto; 
+  width: 400px; 
+  opacity: 0.90;
+  position: center; 
+  margin: auto; 
+}
+
+.fanmail {
+  background-color: #667b68;
+  padding: 10px; 
+  height: auto; 
+  width: 400px; 
+  opacity: 0.90;
+  position: center; 
+  margin: auto; 
+}
+
+.fanmail-box {
+  height: auto; 
+  width: 300px; 
+}
+
+.image {
+  height: auto; 
+  width: 400px;
+}
+
 
 </style>
 </html>
